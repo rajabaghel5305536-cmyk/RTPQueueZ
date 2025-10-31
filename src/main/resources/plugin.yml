@@ -1,0 +1,12 @@
+name: RTPQueueZ
+version: 1.0.0
+main: com.rtpqueuez.RTPQueueZ
+api-version: 1.21
+author: Dev_allenalt_tw
+description: Lightweight and advanced queue system for Random Teleport.
+softdepend: [PlaceholderAPI]
+commands:
+rtpqueue:
+description: Opens the RTP queue menu or queues for a specific world.
+usage: /rtpqueue [world]
+aliases: [rq, rtpq]
