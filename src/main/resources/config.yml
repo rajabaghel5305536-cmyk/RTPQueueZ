@@ -1,0 +1,66 @@
+General Settings
+
+teleport-delay: 5 # Time in seconds before teleport (used for countdown).
+cooldown: 30 # Time in seconds a player must wait after a successful RTP before queuing again.
+max-players-per-queue: 2 # Default max players for any world queue (can be overridden per world later).
+
+Menu Settings
+
+menu:
+title: '&b&lRTP Queue Menu'
+size: 36 # Must be a multiple of 9 (e.g., 9, 18, 27, 36, 45, 54)
+
+Item definitions for worlds
+
+items:
+overworld:
+Material: GRASS_BLOCK
+slot: 11
+display_name:  '&a&lOVERWORLD'
+lore:
+- ''
+- '&6Information:'
+- '&fClick here to queue for'
+- '&fthe overworld world!'
+- ''
+- '&b» &fPlayers in queue: &6%rtpqueue_count_overworld% / 2'
+- ''
+- '&b-» &eClick to Queue'
+# The command to run when clicking this item. The world name is the second argument.
+actions:
+- 'rtpqueue world' # Change 'world' to your main overworld world name
+- 'rtpqueue test1'
+
+nether:
+  Material: NETHERRACK
+  slot: 13
+  display_name:  '&c&lNETHER'
+  lore:
+    - ''
+    - '&6Information:'
+    - '&fClick here to queue for'
+    - '&fthe nether world!'
+    - ''
+    - '&b» &fPlayers in queue: &6%rtpqueue_count_nether% / 2'
+    - ''
+    - '&b-» &eClick to Queue'
+  actions:
+    - 'rtpqueue nether' # Change 'nether' to your nether world name
+    - 'rtpqueue test1'
+
+end:
+  Material: END_STONE
+  slot: 15
+  display_name:  '&3&lTHE END'
+  lore:
+    - ''
+    - '&6Information:'
+    - '&fClick here to queue for'
+    - '&fthe end world!'
+    - ''
+    - '&b» &fPlayers in queue: &6%rtpqueue_count_end% / 2'
+    - ''
+    - '&b-» &eClick to Queue'
+  actions:
+    - 'rtpqueue end' # Change 'end' to your end world name
+    - 'rtpqueue test1'
