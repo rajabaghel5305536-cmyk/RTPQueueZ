@@ -1,0 +1,46 @@
+teleport:
+
+"&aTeleporting in: &6{time}" # {time} will be replaced with the countdown value
+queue-joined:
+
+"&aYou are in queue for: &b{world}"
+queue-joined-broadcast:
+
+"&aRTPQueue"
+
+""
+
+"&a{player} &fis looking for a fight in the &a{world}!"
+
+"&fJoin the queue now and take the challenge!"
+
+""
+
+"&b» &fCommand: &a/rtpqueue"
+queue-leaved:
+
+"&aYou have successfully left the queue!"
+queue-teleport:
+
+"&aYou have successfully been accepted into the queue!"
+
+"&aTeleporting..."
+not-enough-players:
+
+"&cWaiting for more players to join the {world} queue. Current: {count}/2"
+already-in-queue:
+
+"&cYou are already in the queue for &b{world}&c."
+cooldown-active:
+
+"&cYou must wait &6{cooldown}&c seconds before queuing again."
+invalid-world:
+
+"&cThe world '&b{world}&c' is not a valid queue world."
+no-permission:
+
+"&cYou do not have permission to use this command."
+
+titles:
+teleport: "&a&lACCEPTED"
+teleport-subtitle: "&aTeleporting..."
